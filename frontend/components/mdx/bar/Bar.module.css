@@ -1,0 +1,22 @@
+.bar {
+    font-size: 30px;
+    width: 60%;
+    background-color: var(--element-color);
+    padding: 30px 30px;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 4px;
+}
+
+.time {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .bar {
+        flex-direction: column;
+    }
+    .time {
+        margin-left: 0;
+    }
+}

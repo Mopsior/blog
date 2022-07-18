@@ -1,0 +1,30 @@
+.code {
+    background-color: var(--element-color);
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.code p {
+    margin: 0 !important;
+}
+
+.code pre code {
+    color: #ccc;
+}
+
+.code pre {
+    margin: 0 !important;
+    padding: 20px;
+    background-color: var(--element-color) !important;
+    border-radius: 0 0 15px 15px;
+    overflow-x: scroll;
+}
+
+.title {
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    padding: 10px 20px 10px 20px;
+}

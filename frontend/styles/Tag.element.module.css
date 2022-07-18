@@ -1,0 +1,12 @@
+.tag span {
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: 1px solid;
+    background-color: var(--background-color);
+    width: auto;
+    margin-top: 15px;
+}
+.tag {
+    display: flex;
+    justify-content: center;
+}

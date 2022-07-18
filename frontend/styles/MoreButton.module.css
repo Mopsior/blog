@@ -1,0 +1,13 @@
+.more {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.button {
+    padding: 20px 30px;
+    background-color: var(--element-color);
+    border-radius: 30px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 4px;
+}

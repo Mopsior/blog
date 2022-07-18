@@ -1,0 +1,34 @@
+.container {
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    margin: 130px 0 0 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+}
+
+.all_posts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.posts {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1140px) {
+    .posts {
+        justify-content: center;
+    }
+}

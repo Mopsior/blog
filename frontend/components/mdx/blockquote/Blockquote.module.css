@@ -1,0 +1,18 @@
+.blockquote {
+    width: 100%;
+    padding: 20px 20px 20px 40px;
+    border-left: 3px solid #cccccc;
+    color: #cccccc;
+    margin-top: 50px;
+}
+
+.blockquote p {
+    margin: 0 !important;
+}
+
+@media screen and (max-width: 500px) {
+    .blockquote {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,42 @@
+.post {
+    width: 450px;
+    background-color: var(--element-color);
+    border-radius: 30px;
+    padding: 30px 30px 40px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 4px;
+    overflow-wrap: break-word;
+}
+
+.post h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.post p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.post img {
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+    .post {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .post {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .post {
+        width: 200px
+    }
+}

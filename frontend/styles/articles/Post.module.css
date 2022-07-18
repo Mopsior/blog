@@ -1,0 +1,84 @@
+.test {
+    color: blue;
+}
+
+.info {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 80px;
+    overflow-wrap: break-word;
+}
+
+.info p {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.info_image {
+    margin-top: 50px;
+}
+
+.info_image img {
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.content {
+    margin-top: 80px;
+    font-size: 23px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    overflow-wrap: break-word;
+}
+
+.content img {
+    border-radius: 30px;
+}
+
+.content p code {
+    background-color: var(--element-color);
+    padding: 3px 5px;
+    border-radius:  5px;
+    border: 2px solid var(--border-color);
+}
+
+.content a {
+    color: var(--blue-color);
+    border-bottom: 1px solid var(--blue-color);
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+.content h1 {
+    font-size: 60px;
+}
+
+.content li {
+    margin-top: 10px;
+}
+
+.content img,
+.content p,
+.content h1,
+.content h2,
+.content .code {
+    margin-top: 30px;
+}
+
+.content p > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bar_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

@@ -1,0 +1,48 @@
+.highlight {
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+    margin-top: 50px;
+    border-radius: 5px 15px 15px 5px;
+}
+
+.highlight p {
+    margin-top: 0;
+}
+
+.icon {
+    transform: translate(-60px, -40px)
+}
+
+.icon {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.content {
+    margin-top: -50px
+}
+
+.correct {
+    border-left: 3px solid var(--green-color);
+    color: var(--green-color);
+    background-color: var(--green-bg);
+}
+
+.wrong {
+    border-left: 3px solid var(--red-color);
+    color: var(--red-color);
+    background-color: var(--red-bg);
+}
+
+.info {
+    border-left: 3px solid var(--blue-color);
+    color: var(--blue-color);
+    background-color: var(--blue-bg);
+}
+
+@media screen and (max-width: 500px) {
+    .highlight {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

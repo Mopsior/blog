@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.discord {
+    width: 60%;
+    background-color: var(--discord-color);
+    border-radius: 60px;
+    padding: 40px 50px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.discord h1 {
+    font-size: 50px;
+}
+
+.discord p {
+    font-size: 20px
+}
+
+@media screen and (max-width: 950px) {
+    .discord {
+        flex-direction: column;
+    }
+
+    .right {
+        align-items: stretch;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}

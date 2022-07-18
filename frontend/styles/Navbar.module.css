@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 30px;
+    width: 60%;
+    justify-content: space-around;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.open_button span {
+    font-size: 50px;
+    background-color: var(--element-color);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width: 470px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .open_button {
+        display: inline;
+    }
+}
