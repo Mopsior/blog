@@ -95,9 +95,10 @@ export default function Post({ post, error, html }) {
 
 
 export async function getStaticProps({ params }) {
-    let res
+    let res, renderedHTML
     try {
         res = await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/api/posts?filters[uid][$eq]=${params.slug.toString()}&populate=*`)
+        renderedHTML = await renderMD(res.data.data[0].attributes.content)
     } catch {
         return {
             props: {
@@ -107,8 +108,6 @@ export async function getStaticProps({ params }) {
             }
         }
     }
-
-    const renderedHTML = await renderMD(res.data.data[0].attributes.content)
 
     return {
         props: {
