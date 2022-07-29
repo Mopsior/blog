@@ -1,25 +1,30 @@
 {
-  "name": "blog-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "axios": "^0.27.2",
-    "dayjs": "^1.11.4",
-    "next": "12.2.3",
-    "next-mdx-remote": "^4.1.0",
-    "prismjs": "^1.28.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sharp": "^0.30.7"
-  },
-  "devDependencies": {
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3"
-  }
+    "name": "blog-frontend",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "dayjs": "^1.11.4",
+        "next": "12.2.3",
+        "next-mdx-remote": "^4.1.0",
+        "prismjs": "^1.28.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "sharp": "^0.30.7"
+    },
+    "devDependencies": {
+        "eslint": "8.20.0",
+        "eslint-config-next": "12.2.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Mopsior/blog",
+        "directory": "frontend"
+    }
 }
