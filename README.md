@@ -9,7 +9,7 @@
 
 Personal blog and space to teach others (and me 😜)
 
-[A whole story about this project (🇵🇱)](https://blog.mopsior.pl/articles) 
+[A whole story about this project (🇵🇱)](https://blog.mopsior.pl/articles/blog-history) 
 
 ## Technologies 🔧
 
