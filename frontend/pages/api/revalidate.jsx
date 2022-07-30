@@ -9,8 +9,8 @@ export default async function handler(req, res) {
 
     if (req.body.event === 'entry.publish') {
         try {
-            await res.unstable_revalidate('/')
-            await res.unstable_revalidate('/articles')
+            await res.revalidate('/')
+            await res.revalidate('/articles')
             return res.json({ revalidated: true })
         } catch (err) {
             return res.status(500).send('Error revalidating')
@@ -19,9 +19,9 @@ export default async function handler(req, res) {
 
     if (req.body.event === 'entry.update' || req.body.event === 'entry.delete') {
         try {
-            await res.unstable_revalidate('/')
-            await res.unstable_revalidate('/articles')
-            await res.unstable_revalidate(`/posts/${req.body.entry.id}`)
+            await res.revalidate('/')
+            await res.revalidate('/articles')
+            await res.revalidate(`/posts/${req.body.entry.id}`)
             return res.json({ revalidated: true })
         } catch (err) {
             return res.status(500).send('Error revalidating')
