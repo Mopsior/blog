@@ -14,7 +14,7 @@ export default function Post({ link, title, description, image = null, tags = nu
             <a>
                 <div className={styles.post}>
                     { img 
-                    ? <Image src={`http://localhost:1337${img}`} alt="Post Image" width={480} height={270} loading="lazy" />
+                    ? <Image src={`${process.env.NEXT_PUBLIC_CMS_URL}${img}`} alt="Post Image" width={480} height={270} loading="lazy" />
                     : null
                     }
                     <h1>{title}</h1>

@@ -11,9 +11,9 @@ export default function Posts({ posts }) {
             <div className={styles.posts}>
                 { posts.length > 0
                 ? <>
-                    <Post link={`http://localhost:3000/articles/${last.attributes.uid}`} title={last.attributes.title} description={last.attributes.description} tags={last.attributes.tag.data} image={last.attributes.thumbnail.data} />
+                    <Post link={`${process.env.NEXT_PUBLIC_HOME_URL}/articles/${last.attributes.uid}`} title={last.attributes.title} description={last.attributes.description} tags={last.attributes.tag.data} image={last.attributes.thumbnail.data} />
                     { previous
-                    ? <Post link={`http://localhost:3000/articles/${previous.attributes.uid}`} title={previous.attributes.title} description={previous.attributes.description} tags={previous.attributes.tag.data} image={previous.attributes.thumbnail.data} />
+                    ? <Post link={`${process.env.NEXT_PUBLIC_HOME_URL}/articles/${previous.attributes.uid}`} title={previous.attributes.title} description={previous.attributes.description} tags={previous.attributes.tag.data} image={previous.attributes.thumbnail.data} />
                     : null
                     }
                 </>
