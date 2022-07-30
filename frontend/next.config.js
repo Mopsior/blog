@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
-    swcMinify: true
 }
 
 module.exports = {
     nextConfig,
     images: {
-        domains: ['localhost', '127.0.0.1']
+        formats: ['image/avif', 'image/webp'],
+        domains: ['strapi.mopsior.pl']
     }
 }
   
