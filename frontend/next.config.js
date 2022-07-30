@@ -7,7 +7,7 @@ module.exports = {
     nextConfig,
     images: {
         formats: ['image/avif', 'image/webp'],
-        domains: ['strapi.mopsior.pl']
+        domains: ['localhost', 'strapi.mopsior.pl']
     }
 }
   

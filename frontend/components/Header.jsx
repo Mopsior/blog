@@ -7,7 +7,7 @@ export default function Header() {
             <div className={styles.title}>
                 <h1>
                     M
-                    <Image src={`/${process.env.NEXT_PUBLIC_LOGO_DIR}`} alt="logo" width={90} height={80} />
+                    <Image src={`/${process.env.NEXT_PUBLIC_LOGO_DIR}`} alt="o" width={90} height={80} />
                     PSIOR
                 </h1>
             </div>

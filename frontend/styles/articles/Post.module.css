@@ -19,6 +19,8 @@
 
 .info_image {
     margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .info_image img {
@@ -81,4 +83,10 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 450px) {
+    .content {
+        width: 80%;
+    }
 }
