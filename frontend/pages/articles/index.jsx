@@ -4,10 +4,6 @@ import Post from '../../components/Post.element'
 import Head from 'next/head'
 
 export default function Articles({ posts }) {
-    // Deep Copy
-    let copied = JSON.parse(JSON.stringify(posts))
-    let reversed = copied.data.reverse()
-
     return (
         <>
         <Head>
@@ -27,10 +23,10 @@ export default function Articles({ posts }) {
         <div className={styles.container}>
             <h1 className={styles.title}>Artykuły</h1>
             <div className={styles.all_posts}>
-                { posts.data.length > 0
+                { posts.length > 0
                 ?
                 <div className={styles.posts}>
-                        { reversed.map((post) => {
+                        { posts.map((post) => {
                             return <div key={post.id} className={styles.post}>
                                 <Post link={`${process.env.NEXT_PUBLIC_HOME_URL}/articles/${post.attributes.uid}`} title={post.attributes.title} description={post.attributes.description} tags={post.attributes.tag.data} image={post.attributes.thumbnail.data} />
                             </div>
@@ -45,11 +41,11 @@ export default function Articles({ posts }) {
 }
 
 export async function getStaticProps() {
-    const res = await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/api/posts?populate=*`)
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_CMS_URL}/api/posts?populate=*&sort=id:desc`)
 
     return {
         props: {
-            posts: res.data
+            posts: res.data.data
         }
     }
 }
