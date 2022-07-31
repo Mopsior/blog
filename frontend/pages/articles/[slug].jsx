@@ -8,8 +8,8 @@ import Head from 'next/head'
 
 import Code from '../../components/mdx/code/Code'
 import Bar from '../../components/mdx/bar/Bar'
-import Discord from '../../components/Discord'
-import MoreButton from "../../components/MoreButton"
+import Discord from '../../components/Discord/Discord'
+import MoreButton from "../../components/MoreButton/MoreButton"
 import Blockquote from "../../components/mdx/blockquote/Blockquote"
 import Highlight from "../../components/mdx/highlight/Highlight"
 

@@ -1,4 +1,4 @@
-import styles from './../styles/main/Discord.module.css'
+import styles from './Discord.module.css'
 import DiscordButton from './DiscordButton'
 
 export default function Discord() {

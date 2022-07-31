@@ -1,4 +1,4 @@
-import styles from './../styles/Tag.element.module.css'
+import styles from './Tag.module.css'
 
 export default function Tag({ title, color }) {
     return (

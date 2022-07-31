@@ -1,7 +1,7 @@
-import styles from './../styles/Post.element.module.css'
+import styles from './Post.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import Tag from './Tag.element'
+import Tag from '../Tag/Tag'
 
 export default function Post({ link, title, description, image = null, tags = null }) {
     let img

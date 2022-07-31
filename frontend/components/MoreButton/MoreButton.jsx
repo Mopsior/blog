@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/MoreButton.module.css'
+import styles from './MoreButton.module.css'
 
 export default function MoreButton({ text }) {
     return (

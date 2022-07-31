@@ -1,5 +1,5 @@
 import NavbarButton from "./NavbarButton"
-import styles from '../styles/Navbar.module.css'
+import styles from './Navbar.module.css'
 import { useEffect, useState } from "react"
 
 export default function Navbar() {

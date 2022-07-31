@@ -1,6 +1,6 @@
-import styles from './../styles/Posts.module.css'
-import Post from './Post.element'
-import MoreButton from './MoreButton'
+import styles from './Posts.module.css'
+import Post from './Post'
+import MoreButton from '../MoreButton/MoreButton'
 
 export default function Posts({ posts }) {
     const last = posts.at(-1)

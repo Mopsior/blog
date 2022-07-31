@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from './../styles/NavbarButton.module.css'
+import styles from './NavbarButton.module.css'
 
 export default function NavbarButton({ href, text, blue }) {
     return (
