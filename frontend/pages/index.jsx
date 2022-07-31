@@ -1,7 +1,7 @@
-import styles from '../styles/main/Home.module.css'
-import Header from '../components/Header/Header'
-import Posts from '../components/Post/Posts'
-import Discord from '../components/Discord/Discord'
+import styles from '@/styles/main/Home.module.css'
+import Header from '@/components/Header/Header'
+import Posts from '@/components/Post/Posts'
+import Discord from '@/components/Discord/Discord'
 import axios from 'axios'
 import Head from 'next/head'
 

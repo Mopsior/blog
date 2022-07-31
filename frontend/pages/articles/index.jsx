@@ -1,6 +1,6 @@
 import axios from 'axios'
-import styles from '../../styles/articles/Articles.module.css'
-import Post from '../../components/Post/Post'
+import styles from '@/styles/articles/Articles.module.css'
+import Post from '@/components/Post/Post'
 import Head from 'next/head'
 
 export default function Articles({ posts }) {

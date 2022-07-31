@@ -2,16 +2,16 @@ import axios from "axios"
 import { useRouter } from 'next/router'
 import { renderMD } from '../../util/markdown'
 import { MDXRemote } from "next-mdx-remote"
-import styles from '../../styles/articles/Post.module.css'
+import styles from '@/styles/articles/Post.module.css'
 import Image from 'next/image'
 import Head from 'next/head'
 
-import Code from '../../components/mdx/code/Code'
-import Bar from '../../components/mdx/bar/Bar'
-import Discord from '../../components/Discord/Discord'
-import MoreButton from "../../components/MoreButton/MoreButton"
-import Blockquote from "../../components/mdx/blockquote/Blockquote"
-import Highlight from "../../components/mdx/highlight/Highlight"
+import Code from '@/components/mdx/code/Code'
+import Bar from '@/components/mdx/bar/Bar'
+import Discord from '@/components/Discord/Discord'
+import MoreButton from "@/components/MoreButton/MoreButton"
+import Blockquote from "@/components/mdx/blockquote/Blockquote"
+import Highlight from "@/components/mdx/highlight/Highlight"
 
 const components = {
     pre: (props) => {
