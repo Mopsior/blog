@@ -22,6 +22,7 @@
 @media screen and (max-width: 470px) {
     .navbar {
         flex-direction: column;
+        width: 90%;
     }
 
     .open_button {
